@@ -1,51 +1,67 @@
-import React, {useState} from 'react'
-
+import React, { useState } from "react";
+import fb from "../icons/facebook-logo.png";
+import tt from "../icons/twitter.png";
+import mail from "../icons/envelope.png";
+import add from "../icons/add.png";
+import menu from "../icons/menu.png";
 
 const contactIcons = [
-    {alt: 'facebook', url: '../icons/facebook-logo.png'},
-    {alt: 'twitter', url: '../icons/twitter.png'},
-    {alt: 'gmail', url: '../icons/envelope.png'}
-]
+  { alt: "facebook", url: fb },
+  { alt: "twitter", url: tt },
+  { alt: "gmail", url: mail },
+];
 
-function Menu(){
-   
-    const [show, setShow] = useState(false);
+function Menu() {
+  const [show, setShow] = useState(false);
 
-    const closeMenu = () => {
-        setShow(false);
-    }
-    const openMenu = () => {
-        setShow(true);
-    }
+  const closeMenu = () => {
+    setShow(false);
+  };
+  const openMenu = () => {
+    setShow(true);
+  };
 
-
-    return (
-        <nav className="nav">
-            <div className={show ? "side-menu show" : "side-menu"}>
-                <div className="close-btn" onClick={closeMenu}>
-                    <img src="../icons/add.png" alt="close" />
-                </div>
-                <ul className="menu">
-                    <li><a href="#" className="active" onClick={closeMenu}>Home</a></li>
-                    <li><a href="#product" onClick={closeMenu}>Product</a></li>
-                    <li><a href="#services" onClick={closeMenu}>Services</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-                <ul className="contact">
-                    {contactIcons.map(contact => (
-                        <li>
-                            <a href="#">
-                                <img src={contact.url} alt={contact.alt} />
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="hamberger-btn" onClick={openMenu}>
-                <img src="../icons/menu.png" alt="Menu" />
-            </div>
-        </nav>
-    )
+  return (
+    <nav className="nav">
+      <div className={show ? "side-menu show" : "side-menu"}>
+        <div className="close-btn" onClick={closeMenu}>
+          <img src={add} alt="close" />
+        </div>
+        <ul className="menu">
+          <li>
+            <a href="/" className="active" onClick={closeMenu}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#product" onClick={closeMenu}>
+              Product
+            </a>
+          </li>
+          <li>
+            <a href="#services" onClick={closeMenu}>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="/">Support</a>
+          </li>
+        </ul>
+        <ul className="contact">
+          {contactIcons.map((contact) => (
+            <li>
+              <a href="/">
+                <img src={contact.url} alt={contact.alt} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="hamberger-btn" onClick={openMenu}>
+        <img src={menu} alt="Menu" />
+      </div>
+    </nav>
+  );
 }
 
-export default Menu
+export default Menu;

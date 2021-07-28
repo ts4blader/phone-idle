@@ -1,7 +1,8 @@
 import Menu from "../components/Menu";
 import Account from "../components/Account.js";
+import newlogo from "../icons/newlogo.png";
 import React, { useState, useEffect } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 let lastScroll = 0;
 
@@ -40,9 +41,9 @@ const Header = () => {
         <Menu />
         {/* Logo  */}
         <Link to="/">
-        <div className="logo">
-          <img src="../icons/newlogo.png" alt="Logo" />
-        </div>
+          <div className="logo">
+            <img src={newlogo} alt="Logo" />
+          </div>
         </Link>
       </div>
       <div className="right-side">
