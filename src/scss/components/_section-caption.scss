@@ -1,0 +1,17 @@
+.caption{
+    text-align: left;
+    $size: $base-size;
+    @include flex(flex-start, row);
+    font-size: $size * 4;
+    margin-bottom: $base-size;
+    .model{
+        margin-right: $size * 0.5;
+        margin-right: $size * 0.8;
+    }
+    .version{
+        background: black;
+        border: 3px solid white;
+        border-radius: $size * 0.5;
+        padding: $size * 0.2 $size * 0.6;
+    }
+}

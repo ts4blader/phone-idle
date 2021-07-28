@@ -1,0 +1,38 @@
+.color-map{
+    margin: $base-size * 1.5 0;
+    @include flex(start, row);
+    .color__item{
+        @include size($base-size * 1.5);
+        border-radius: 100%;
+        margin: 0 $base-size* 0.4;
+        cursor: pointer;
+        position: relative;
+        &.active{
+            &::before{
+                content: '';
+                @include absoluteCenter('both');
+                @include size( $base-size * 1.9 );
+                border-radius:100%;
+                border: 2px solid white;
+            }
+        }
+    }
+    .red{
+        background: $accent-color;
+    }
+    .black{
+        background: black;
+    }
+    .white{
+        background: white;
+    }
+    .blue{
+        background: $blue;
+    }
+    .green{
+        background: $green;
+    }
+}
+
+
+

@@ -1,0 +1,59 @@
+.slide {
+  width: 100vw;
+  @include flex(space-between, row);
+  padding: 0 15vh;
+  position: relative;
+  .watermark {
+    position: absolute;
+    opacity: 0;
+    top: -50%;
+    color: rgba(white, 0.1);
+    font-size: 10 * $base-size;
+    text-transform: uppercase;
+    z-index: -9;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    &.play{
+      top: -30%;
+      opacity: 1;
+    }
+  }
+  .content {
+    width: 50%;
+    .caption {
+      font-size: 4 * $base-size;
+      margin-bottom: 1.2 * $base-size;
+      display: inline-block;
+      @include animation('X', -10vw, 50ms);
+    }
+    .version {
+      display: inline-block;
+      font-size: 4 * $base-size;
+      border-radius: $base-size * 0.5;
+      border: 2px solid white;
+      background: black;
+      padding: 0.2 * $base-size 0.7 * $base-size;
+      margin: 0 1.2 * $base-size;
+      @include animation('X', 10vw, 100ms);
+    }
+    .description {
+      font-size: 1.2 * $base-size;
+      width: 80%;
+      @include animation('Y', 10vh, 100ms);
+    }
+    .btn {
+      width: 50%;
+      margin-top: 1.2 * $base-size;
+      text-align: center;
+      @include animation('Y', -10vh, 150ms);
+    }
+  }
+  .preview {
+    width: 50%;
+    text-align: center;
+    @include animation('Y', -20vh, 200ms);
+    img {
+      width: 20vw;
+    }
+  }
+}

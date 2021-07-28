@@ -1,0 +1,81 @@
+.product-detail {
+    position: relative;
+    .gray-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100%;
+        background: rgba($color: $subback-color, $alpha: 0.5);
+        z-index: -10;
+    }
+    .section {
+        position: relative;
+        height: 100vh;
+        .section-title {
+            color: rgba($color: white, $alpha: 0.3);
+            font-style: italic;
+            font-size: $base-size * 0.8;
+            bottom: 7vh;
+            @include absoluteCenter("hor");
+            &::after,
+            &::before {
+                content: "";
+                @include absoluteCenter("ver");
+                width: 25vw;
+                height: 1px;
+                background: rgba($color: white, $alpha: 0.3);
+            }
+            &::before {
+                left: 10vw;
+            }
+            &::after {
+                right: 10vw;
+            }
+        }
+        .watermark {
+            position: absolute;
+            top: 10%;
+            color: rgba(white, 0.1);
+            font-size: 10 * $base-size;
+            text-transform: uppercase;
+            z-index: -9;
+            white-space: nowrap;
+        }
+        .section__content {
+            align-items: start;
+            .btn {
+                text-align: center;
+                width: 50%;
+            }
+        }
+        .section__preview {
+            text-align: center;
+            .img {
+                width: 20vw;
+            }
+        }
+    }
+    .section__specs {
+        @include flex(center, column);
+        .specs {
+            justify-content: space-evenly;
+            margin-top: 1.5 * $base-size;
+        }
+        .item-detail {
+            @include flex(start, row);
+            width: 80%;
+            img {
+                width: 3vw;
+                margin: $base-size 0;
+                margin-right: 2vw;
+            }
+            font-size: $base-size * 1.5;
+        }
+        .btn {
+            margin-top: $base-size;
+            width: 15%;
+            text-align: center;
+        }
+    }
+}

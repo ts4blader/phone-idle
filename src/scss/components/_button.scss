@@ -1,0 +1,18 @@
+.btn {
+  cursor: pointer;
+  font-size: $base-size * 1.1;
+  background: $background-color;
+  color: white;
+  border-radius: $base-size * 1.5;
+  padding: $base-size * 0.7 $base-size * 1.7;
+  border: 3px solid white;
+  margin: 0 $base-size;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-10%);
+  }
+  &.secondary {
+    background: $accent-color;
+    border: none;
+  }
+}

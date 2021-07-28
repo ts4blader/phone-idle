@@ -1,0 +1,16 @@
+export const meta = {
+  name: "PhoneIdle",
+  icons: "./icons/phone.png",
+  logo: "./icons/logo.png",
+  mainTech: "React.js",
+  subTech: ["SCSS"],
+  copy: "Copyright@PhoneIdle",
+  year: "2021",
+  porpose: "Learning",
+  developer: "Tristin Tran",
+  design: "Tristin Tran",
+  catalog: ["products", "terms", "contact", "support"],
+  contacts: ["Facebook", "Twitter", "Gmail"],
+  support: ["Order", "Payment"],
+  terms: ["Licenses", "Term of uses", "private policy"],
+};

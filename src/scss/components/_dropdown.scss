@@ -1,0 +1,41 @@
+.dropdown{
+    @include flex(start, row);
+    background: $subback-color;
+    border-radius: $base-size * 0.5;
+    padding: 0 $base-size * 1;
+    width: max-content;
+    position: relative;
+    &__trigger{
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    .items{
+        display: none;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: $subback-color;
+        border-radius: $base-size * 0.5;
+        z-index: $bedrock-layer;
+        .item{
+            padding: 1.5 * $base-size $base-size * 1;
+            &:hover{
+                background: rgba(white, 0.2);
+            }
+        }
+    }
+    .caret{
+        @include size($base-size * 0.8);
+        margin: 1.5 * $base-size 0;
+        margin-left: $base-size * 1;
+        background: white;
+        transform: rotate(180deg);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+}

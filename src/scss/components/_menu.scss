@@ -1,0 +1,98 @@
+.nav {
+  .hamberger-btn {
+    cursor: pointer;
+    img {
+      width: 3vw;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+    height: 100vh;
+    background: $subback-color;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 300ms ease;
+    z-index: $bedrock-layer;
+    &.show {
+      left: 0;
+    }
+    .close-btn {
+      position: absolute;
+      cursor: pointer;
+      top: 7vh;
+      right: 3vw;
+      transform: rotate(-45deg);
+      width: 5vw;
+      height: 5vw;
+      @include flex(center, row);
+      border-radius: 100%;
+      background: $accent-color;
+      img {
+        width: 3vw;
+      }
+    }
+    .menu {
+      margin: 0 auto;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateY(-10%);
+      align-items: left;
+      li {
+        font-weight: 400;
+        margin: $base-size * 0.7 0;
+        a {
+          position: relative;
+          font-size: $base-size * 3.5;
+          color: white;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            left: 0;
+            width: 0;
+            height: 0.2 * $base-size;
+            background: white;
+            border-radius: 0.2 * $base-size;
+            transition: width 0.3s ease;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          &.active::after {
+            width: 100%;
+            background: $accent-color;
+          }
+        }
+      }
+    }
+    .contact {
+      position: absolute;
+      bottom: 5vh;
+      left: 25vw;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin: 0 $base-size;
+        transition: transform 200ms ease;
+        &:hover {
+          transform: translateY(-10%);
+        }
+        img {
+          width: 5vw;
+        }
+      }
+    }
+  }
+}

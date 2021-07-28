@@ -1,0 +1,90 @@
+.product {
+    width: 100%;
+    .card-panel {
+        @include size(70vw, auto);
+        margin: 10vh auto;
+        text-align: center;
+        h3.device {
+            font-size: 2 * $base-size;
+            font-weight: 600;
+            margin-bottom: 7vh;
+            // text-decoration: underline;
+            &::before {
+                content: "#";
+            }
+        }
+    }
+    .card-grp {
+        @include size(70%, auto);
+        margin: 5vh auto;
+        padding: 1 * $base-size;
+        display: grid;
+        grid-row-gap: 1 * $base-size;
+        grid-column-gap: 1 * $base-size;
+        grid-template-columns: auto auto;
+        background: $subback-color;
+        border-radius: 0.5 * $base-size;
+        .card {
+            background: $background-color;
+            border-radius: 0.5 * $base-size;
+            padding: $base-size * 2 $base-size;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                transform: translateY(-2%);
+                box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.25);
+            }
+            .name {
+                font-size: 2 * $base-size;
+                font-weight: bold;
+            }
+            .price {
+                font-size: 1.2 * $base-size;
+                font-style: italic;
+            }
+            .soldout-overlay {
+                @include size(100%);
+                background: rgba($color: #6c6c6c, $alpha: 0.9);
+                position: absolute;
+                border-radius: inherit;
+                top: 0;
+                left: 0;
+                z-index: $diamond-layer;
+                &::after {
+                    content: "Sold Out";
+                    font-weight: bold;
+                    @include absoluteCenter();
+                    font-size: 2.5 * $base-size;
+                }
+            }
+            .preview {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                img {
+                    width: 8vw;
+                }
+            }
+            &:nth-child(1) {
+                @include flex(center, column);
+                grid-row-start: 1;
+                grid-row-end: 3;
+                .preview {
+                    margin-bottom: $base-size;
+                    img {
+                        width: 15vw;
+                    }
+                }
+                .name {
+                    font-size: 2.5 * $base-size;
+                    margin-bottom: $base-size;
+                }
+                .price {
+                    font-size: 1.5 * $base-size;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./reset";
+@import "./function";
+
+// Component
+@import "./components/account";
+@import "./components/button";
+@import "./components/carousel-indicator";
+@import "./components/carousel";
+@import "./components/header";
+@import "./components/menu";
+@import "./components/product";
+@import "./components/services";
+@import "./components/slide";
+@import "./components/title";
+@import "./components/footer";
+@import "./components/onTop";
+@import "./components/section-caption";
+@import "./components/dropdown";
+@import "./components/color-map";
+@import "./components/specs-detail";
+
+//pages
+@import "./pages/product-detail";
+@import "./pages/support";

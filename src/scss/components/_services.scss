@@ -1,0 +1,47 @@
+.services {
+    .card-grp {
+        @include flex(space-between, row);
+        @include size(70%, auto);
+        margin: 15vh auto;
+        text-align: center;
+        .card {
+            @include flex(center, column);
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            padding: 3vh 3vw;
+            background: $subback-color;
+            border-radius: $base-size;
+            box-shadow: 2px 4px 10px 0 rgba($color: black, $alpha: 0.25);
+            &:hover {
+                .description {
+                    bottom: 0;
+                    opacity: 1;
+                }
+            }
+            .img {
+                width: 12vw;
+                margin-bottom: 1.5 * $base-size;
+            }
+            .name {
+                font-size: 2 * $base-size;
+                font-weight: bold;
+            }
+            .description {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 100%;
+                font-size: 1.2 * $base-size;
+                left: 0;
+                opacity: 0;
+                color: $background-color;
+                padding: 0 $base-size;
+                background: rgba($color: #e8e8e8, $alpha: 1);
+                @include flex();
+                line-height: 1.5;
+                transition: bottom 0.3s ease, opacity 0.3s ease;
+            }
+        }
+    }
+}

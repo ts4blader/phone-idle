@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+// ====== Reset ============
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Asap" !important;
+  font-size: $base-size;
+  color: white;
+  background-color: $background-color;
+  overflow-x: hidden;
+  line-height: 1.25;
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+  font-family: "Asap";
+}

@@ -1,0 +1,32 @@
+.indicator {
+    @include absoluteCenter("hor");
+    bottom: 10vh;
+    position: relative;
+    width: max-content;
+    .controller {
+        img {
+            width: 2vw;
+            @include absoluteCenter("ver");
+            cursor: pointer;
+        }
+        .next {
+            left: 110%;
+        }
+        .prev {
+            right: 110%;
+        }
+    }
+    .dot-grp {
+        @include flex();
+        .dot {
+            cursor: pointer;
+            @include size($base-size * 1.2);
+            background: $subback-color;
+            border-radius: 50%;
+            margin: 0 $base-size * 0.5;
+            &.active {
+                background: $sub-color;
+            }
+        }
+    }
+}

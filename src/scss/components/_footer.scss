@@ -1,0 +1,73 @@
+.footer {
+    background: $subback-color;
+    padding: 5vh 0;
+    .footer-caption {
+        @include flex(space-between, row);
+        @include container();
+        .logo {
+            @include flex(center, row);
+            img {
+                width: 5vw;
+                margin-right: $base-size * 0.5;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 2 * $base-size;
+            }
+        }
+        .subcribe-form {
+            border-radius: $base-size;
+            overflow: hidden;
+            box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.25);
+            input {
+                font-family: "Asap";
+                border: none;
+                font-size: 1 * $base-size;
+                padding: 0.8 * $base-size 1.2 * $base-size;
+                color: white;
+                font-weight: bold;
+            }
+            input[type="text"] {
+                background: $background-color;
+            }
+            input[type="submit"] {
+                background: $accent-color;
+            }
+        }
+    }
+    .catalog-container {
+        @include container(80%, 5vh);
+        @include flex(space-between, row);
+        align-items: flex-start;
+        .catalog {
+            .name {
+                text-transform: capitalize;
+                font-size: 1.5 * $base-size;
+                color: $accent-color;
+                margin-bottom: 0.5 * $base-size;
+                font-weight: bold;
+            }
+            .index {
+                text-transform: capitalize;
+                line-height: 1.5;
+                font-size: 1 * $base-size;
+                transition: transform 0.2s ease;
+                &:hover {
+                    transform: translateX(10px);
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        font-style: italic;
+        color: #bbb;
+        font-size: 0.7 * $base-size;
+    }
+}

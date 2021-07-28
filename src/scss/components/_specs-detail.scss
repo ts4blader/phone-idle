@@ -1,0 +1,74 @@
+.specs-detail-wrapper {
+    .btn {
+        width: 10vw !important;
+        text-align: center;
+    }
+}
+.specs-detail {
+    position: fixed;
+    z-index: $obsidian-layer;
+    padding: 5vh 4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms ease;
+    width: 60%;
+    height: auto;
+    background: $accent-color;
+    border-radius: $base-size * 2;
+    box-shadow: 2px 4px 10px 0 rgba(black, 0.25);
+    &.open {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &::after {
+        content: "";
+        @include absoluteCenter("hor");
+        width: 60%;
+        height: 3px;
+        background: white;
+    }
+    .close-btn {
+        cursor: pointer;
+        transform: rotate(45deg);
+        align-self: center;
+        img {
+            width: 2vw;
+        }
+    }
+    .specs-detail__title {
+        display: flex;
+        align-items: flex-end;
+        .model {
+            flex-grow: 1;
+            text-align: right;
+            margin: 0 $base-size * 2;
+            p {
+                font-size: $base-size * 1.2;
+                font-style: italic;
+                margin-bottom: $base-size * 0.5;
+            }
+            .bar {
+                width: 100%;
+                height: 3px;
+                background: white;
+            }
+        }
+        h3 {
+            font-size: $base-size * 2;
+            font-weight: bold;
+        }
+    }
+    .specs-container {
+        margin: 5vh 0;
+        .spec__row {
+            margin: $base-size * 0.5 0;
+            p {
+                text-transform: capitalize;
+                font-size: $base-size * 1.2;
+            }
+            &__value {
+                text-align: right;
+            }
+        }
+    }
+}
