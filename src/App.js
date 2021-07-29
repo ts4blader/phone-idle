@@ -5,8 +5,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import OnTop from "./components/OnTop";
-import Button from "./components/Button";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
