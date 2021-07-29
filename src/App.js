@@ -24,7 +24,6 @@ function App() {
         </Switch>
         <Footer />
         <OnTop />
-        <Button content="I am a Button" type="secondary" />
       </div>
     </Router>
   );

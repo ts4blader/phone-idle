@@ -1,17 +1,24 @@
+import ship from "../res/icons/delivery-truck.png";
+import shield from "../res/icons/secure-shield.png";
+import support from "../res/icons/technical-support.png";
+
 export const services = [
-    {
-        name: 'Free Shipping',
-        img: './icons/delivery-truck.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. '
-    },
-    {
-        name: 'Secure',
-        img: './icons/secure-shield.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. '
-    },
-    {
-        name: 'Support',
-        img: './icons/technical-support.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. '
-    }
-]
+  {
+    name: "Free Shipping",
+    img: ship,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. ",
+  },
+  {
+    name: "Secure",
+    img: shield,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. ",
+  },
+  {
+    name: "Support",
+    img: support,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet. ",
+  },
+];

@@ -1,6 +1,6 @@
 import Menu from "../components/Menu";
 import Account from "../components/Account.js";
-import newlogo from "../icons/newlogo.png";
+import newlogo from "../res/icons/newlogo.png";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 

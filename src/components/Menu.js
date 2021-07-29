@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import fb from "../icons/facebook-logo.png";
-import tt from "../icons/twitter.png";
-import mail from "../icons/envelope.png";
-import add from "../icons/add.png";
-import menu from "../icons/menu.png";
+import fb from "../res/icons/facebook-logo.png";
+import tt from "../res/icons/twitter.png";
+import mail from "../res/icons/envelope.png";
+import add from "../res/icons/add.png";
+import menu from "../res/icons/menu.png";
 
 const contactIcons = [
   { alt: "facebook", url: fb },

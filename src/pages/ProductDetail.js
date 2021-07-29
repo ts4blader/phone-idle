@@ -3,6 +3,8 @@ import { phones } from "../data/PhoneData";
 import Dropdown from "../components/Dropdown";
 import ColorMap from "../components/ColorMap";
 import SpecsDetail from "../components/SpecsDetail";
+import { Icon } from "../res/ResourceHelper";
+
 var i = 0;
 
 const ProductDetail = ({ match }) => {
@@ -16,11 +18,7 @@ const ProductDetail = ({ match }) => {
         data-aos-duration="300"
         data-aos-delay={(i += 50)}
       >
-        <img
-          src={`../icons/${props.detail}.png`}
-          alt={props.detail}
-          className="img"
-        />
+        <Icon icon={props.detail + ".png"} alt={props.detail} />
         <p className="detail">{phone.spec[props.detail]}</p>
       </div>
     );
@@ -51,7 +49,7 @@ const ProductDetail = ({ match }) => {
           </div>
         </div>
         <div className="section__preview col" data-aos="fade-up">
-          <img src="../icons/smartphone.png" alt="Smartphone" className="img" />
+          <img src={phone.img} alt="Smartphone" className="img" />
         </div>
       </div>
       <div className="section container section__specs container">

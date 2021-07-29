@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Icon } from "../res/ResourceHelper";
 const OnTop = () => {
   const [scroll, setScroll] = useState(false);
 
@@ -13,8 +13,8 @@ const OnTop = () => {
   });
 
   return (
-    <a href="#" className={scroll ? "ontop-btn show" : "ontop-btn"}>
-      <img src="../icons/up-arrow.png" alt="Up" />
+    <a href="/" className={scroll ? "ontop-btn show" : "ontop-btn"}>
+      <Icon icon="up-arrow.png" alt="up" />
     </a>
   );
 };
