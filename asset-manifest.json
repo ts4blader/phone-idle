@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/phone-idle/static/css/main.216811dd.chunk.css",
-    "main.js": "/phone-idle/static/js/main.27983cb6.chunk.js",
-    "main.js.map": "/phone-idle/static/js/main.27983cb6.chunk.js.map",
+    "main.js": "/phone-idle/static/js/main.f4115c47.chunk.js",
+    "main.js.map": "/phone-idle/static/js/main.f4115c47.chunk.js.map",
     "runtime-main.js": "/phone-idle/static/js/runtime-main.47f6e8d2.js",
     "runtime-main.js.map": "/phone-idle/static/js/runtime-main.47f6e8d2.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/phone-idle/static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.1abe7861.chunk.js": "/phone-idle/static/js/2.1abe7861.chunk.js",
-    "static/js/2.1abe7861.chunk.js.map": "/phone-idle/static/js/2.1abe7861.chunk.js.map",
+    "static/js/2.85686eb0.chunk.js": "/phone-idle/static/js/2.85686eb0.chunk.js",
+    "static/js/2.85686eb0.chunk.js.map": "/phone-idle/static/js/2.85686eb0.chunk.js.map",
     "static/js/3.4364d45a.chunk.js": "/phone-idle/static/js/3.4364d45a.chunk.js",
     "static/js/3.4364d45a.chunk.js.map": "/phone-idle/static/js/3.4364d45a.chunk.js.map",
     "index.html": "/phone-idle/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/phone-idle/static/css/2.ae9e5f60.chunk.css.map",
     "static/css/main.216811dd.chunk.css.map": "/phone-idle/static/css/main.216811dd.chunk.css.map",
-    "static/js/2.1abe7861.chunk.js.LICENSE.txt": "/phone-idle/static/js/2.1abe7861.chunk.js.LICENSE.txt",
+    "static/js/2.85686eb0.chunk.js.LICENSE.txt": "/phone-idle/static/js/2.85686eb0.chunk.js.LICENSE.txt",
     "static/media/delivery-truck.png": "/phone-idle/static/media/delivery-truck.e87e6175.png",
     "static/media/newlogo.png": "/phone-idle/static/media/newlogo.43d1a5ea.png",
     "static/media/secure-shield.png": "/phone-idle/static/media/secure-shield.d6aa6657.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.47f6e8d2.js",
     "static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.1abe7861.chunk.js",
+    "static/js/2.85686eb0.chunk.js",
     "static/css/main.216811dd.chunk.css",
-    "static/js/main.27983cb6.chunk.js"
+    "static/js/main.f4115c47.chunk.js"
   ]
 }
