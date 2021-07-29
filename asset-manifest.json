@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/phone-idle/static/css/main.216811dd.chunk.css",
-    "main.js": "/phone-idle/static/js/main.f4115c47.chunk.js",
-    "main.js.map": "/phone-idle/static/js/main.f4115c47.chunk.js.map",
+    "main.js": "/phone-idle/static/js/main.49d10d0f.chunk.js",
+    "main.js.map": "/phone-idle/static/js/main.49d10d0f.chunk.js.map",
     "runtime-main.js": "/phone-idle/static/js/runtime-main.47f6e8d2.js",
     "runtime-main.js.map": "/phone-idle/static/js/runtime-main.47f6e8d2.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/phone-idle/static/css/2.ae9e5f60.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.85686eb0.chunk.js",
     "static/css/main.216811dd.chunk.css",
-    "static/js/main.f4115c47.chunk.js"
+    "static/js/main.49d10d0f.chunk.js"
   ]
 }
